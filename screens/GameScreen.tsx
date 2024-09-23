@@ -1,10 +1,9 @@
-import { Button, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
-export default function HomeScreen() {
+export default function GameScreen() {
   return (
     <View style={styles.container}>
-      <Text>RIPT REVENGE</Text>
-      {/* <Button title="Start game" onPress={() => navigation.navigate("Game")} /> */}
+      <Text>GAME SCREEN</Text>
     </View>
   );
 }

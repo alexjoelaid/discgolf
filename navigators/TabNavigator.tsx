@@ -1,11 +1,12 @@
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "../screens/HomeScreen";
+import GameScreen from "../screens/GameScreen";
 
 //Beskriv vad navigatorn ska innehålla
 export type TabParamList = {
   Home: undefined;
-  Favorites: undefined;
+  Game: undefined;
 };
 //Skapar navigatorn från TabParamListt
 const Tab = createBottomTabNavigator<TabParamList>();
@@ -27,6 +28,7 @@ export default function TabNavigator() {
       })}
     >
       <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Game" component={GameScreen} />
     </Tab.Navigator>
   );
 }
