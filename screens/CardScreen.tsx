@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function SettingsScreen() {
+export default function GameScreen() {
   return (
     <View style={styles.container}>
-      <Text>SETTINGSSCREEN</Text>
+      <Text>GAME SCREEN</Text>
     </View>
   );
 }
