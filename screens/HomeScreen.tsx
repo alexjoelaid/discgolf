@@ -22,9 +22,7 @@ export default function HomeScreen(props: Props) {
       />
       <Button
         title="Start game"
-        onPress={() =>
-          props.navigation.navigate("GameScreen", { nrOfPlayers: 2 })
-        }
+        onPress={() => props.navigation.navigate("GameScreen")}
       />
     </View>
   );

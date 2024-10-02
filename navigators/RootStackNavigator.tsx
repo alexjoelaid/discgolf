@@ -8,7 +8,7 @@ import TabNavigator, { TabParamList } from "./TabNavigator";
 export type RootStackParamList = {
   Home: undefined;
   Settings: undefined;
-  Game: NavigatorScreenParams<TabParamList>;
+  GameScreen: { nrOfPlayers: number } & NavigatorScreenParams<TabParamList>;
   ContactScreen: undefined;
 };
 
@@ -23,7 +23,7 @@ export default function RootStackNavigator() {
         component={SettingsScreen}
         options={{ headerBackTitle: "Back" }}
       />
-      <RootStack.Screen name="Game" component={TabNavigator} />
+      <RootStack.Screen name="GameScreen" component={TabNavigator} />
       <RootStack.Screen name="ContactScreen" component={ContactScreen} />
     </RootStack.Navigator>
   );
