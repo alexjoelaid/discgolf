@@ -2,12 +2,14 @@ import { NavigatorScreenParams } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "../screens/HomeScreen";
 import SettingsScreen from "../screens/SettingsScreen";
+import ContactScreen from "../expo-components/ContactScreen";
 import TabNavigator, { TabParamList } from "./TabNavigator";
 
 export type RootStackParamList = {
   Home: undefined;
   Settings: undefined;
   Game: NavigatorScreenParams<TabParamList>;
+  ContactScreen: undefined;
 };
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
@@ -22,6 +24,7 @@ export default function RootStackNavigator() {
         options={{ headerBackTitle: "Back" }}
       />
       <RootStack.Screen name="Game" component={TabNavigator} />
+      <RootStack.Screen name="ContactScreen" component={ContactScreen} />
     </RootStack.Navigator>
   );
 }
