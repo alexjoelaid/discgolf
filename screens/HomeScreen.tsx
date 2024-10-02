@@ -6,10 +6,7 @@ import { RootStackParamList } from "../navigators/RootStackNavigator";
 import { TabParamList } from "../navigators/TabNavigator";
 
 type Props = CompositeScreenProps<
-  //Första argumentet till composite ska vara närmare navigatorn till skärmen,
-  //inklusive namnet på den specifika sidan
   NativeStackScreenProps<RootStackParamList, "Home">,
-  //Andra argumentet är den närliggande navigatorn
   BottomTabScreenProps<TabParamList>
 >;
 
@@ -19,6 +16,10 @@ export default function HomeScreen(props: Props) {
   return (
     <View style={styles.container}>
       <Text>RIPT REVENGE</Text>
+      <Button
+        title="invite"
+        onPress={() => props.navigation.navigate("ContactScreen")}
+      />
       <Button
         title="Start game"
         onPress={() =>
