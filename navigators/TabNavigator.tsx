@@ -6,7 +6,7 @@ import GameScreen from "../screens/GameScreen";
 //Beskriv vad navigatorn ska innehålla
 export type TabParamList = {
   CardScreen: undefined;
-  GameScreen: { nrOfPlayers: number };
+  GameScreen: undefined;
 };
 //Skapar navigatorn från TabParamList
 const Tab = createBottomTabNavigator<TabParamList>();
@@ -26,8 +26,8 @@ export default function TabNavigator() {
         ),
       })}
     >
-      <Tab.Screen name="CardScreen" component={CardScreen} />
       <Tab.Screen name="GameScreen" component={GameScreen} />
+      <Tab.Screen name="CardScreen" component={CardScreen} />
     </Tab.Navigator>
   );
 }
