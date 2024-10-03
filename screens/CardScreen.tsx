@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function GameScreen() {
+export default function CardScreen() {
   return (
     <View style={styles.container}>
       <Text>GAME SCREEN</Text>
