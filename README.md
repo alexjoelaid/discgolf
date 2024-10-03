@@ -20,7 +20,16 @@ EXPO SDK
 - https://docs.expo.dev/versions/latest/sdk/map-view/
 - https://docs.expo.dev/versions/latest/sdk/location/
 
+För att starta programmet:
+
 - npm install
+  - för att installera alla dependencies
+- npm start
+  - för att starta projektet i valde IDE, sen trycka på "a" för att starta upp det i android studio på din virtuella enhet.
+
+Du behöver också starta android studio och boota upp vald enhet (byggd på API version 34)
+
+---
 
 Krav för godkänt:
 [X] 1. Projektet använder minst 4 stycken RN-komponenter och minst 4 stycken Expo
